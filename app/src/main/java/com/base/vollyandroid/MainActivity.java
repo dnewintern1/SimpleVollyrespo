@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView serverRespo;
     private Button btnResponse;
 
-    private String server_url="http://192.168.116.150/myfile.php";
+    private String server_url="http://172.20.10.2/gretting/myfile.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onErrorResponse(VolleyError error) {
 
-                        serverRespo.setText("somthing went wrong.");
+                        serverRespo.setText("somthing went wrong."+ error);
                         error.printStackTrace();
                         requestQueue.stop();
 
