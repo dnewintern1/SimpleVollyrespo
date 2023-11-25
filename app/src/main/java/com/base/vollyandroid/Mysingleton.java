@@ -40,7 +40,7 @@ public class Mysingleton {
         return mInstance;
     }
 
-    public void addtoRequestqueue(Request request){
+    public<T>void addtoRequestqueue(Request<T>  request){
 
         requestqueue.add(request);
 
