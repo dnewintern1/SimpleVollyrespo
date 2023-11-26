@@ -16,8 +16,15 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".MakingJsonReq"
-            android:exported="true" >
+            android:name=".Btnactivityjson"
+            android:exported="false" >
+
+
+
+        </activity>
+        <activity
+            android:name=".MakingJsonArrayReq"
+            android:exported="true">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,12 +32,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
+
+
         </activity>
         <activity
-            android:name=".SimpleReqImage"
+            android:name=".MakingJsonReq"
             android:exported="false">
 
         </activity>
+        <activity
+            android:name=".SimpleReqImage"
+            android:exported="false" />
         <activity
             android:name=".SinglePatternVolley"
             android:exported="false" />

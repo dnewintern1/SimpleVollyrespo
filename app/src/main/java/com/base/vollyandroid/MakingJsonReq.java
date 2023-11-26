@@ -20,7 +20,7 @@ public class MakingJsonReq extends AppCompatActivity {
     Button btnjsonResponse;
     TextView name,email,mobile;
 
-    private String server_url="http://172.20.10.2/gretting/arrayjson.php";
+    private String server_url="http://192.168.29.45/gretting/arrayjson.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,9 +42,9 @@ public class MakingJsonReq extends AppCompatActivity {
                             public void onResponse(JSONObject response) {
 
                                 try{
-                                    name.setText(response.getString("firstName"));
-                                    email.setText(response.getString("lastName"));
-                                    mobile.setText(response.getString("gender"));
+                                    name.setText(response.getString("Name"));
+//                                    email.setText(response.getString("lastName"));
+//                                    mobile.setText(response.getString("gender"));
 
                                 }catch(JSONException e){
                                     e.printStackTrace();
